@@ -1,0 +1,74 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Main.Position = UDim2.new(0, 0, 0.14385964, 0)
+Main.Size = UDim2.new(0, 39, 0, 38)
+Main.Style = Enum.FrameStyle.RobloxSquare
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+TextButton.Position = UDim2.new(-0.482593238, 0, -0.31461972, 0)
+TextButton.Size = UDim2.new(0, 43, 0, 37)
+TextButton.Style = Enum.ButtonStyle.RobloxButton
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Toxic"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.MouseButton1Down:connect(function()
+local A_1 = "ez"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(0.1)
+local A_1 = "motherless"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(0.2)
+local A_1 = "braindead"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(0.2)
+local A_1 = "trash"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(0.2)
+local A_1 = "get good"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(0.2)
+local A_1 = "cry"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(0.2)
+local A_1 = "ez"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+end)
+-- Scripts:
+
+local function OQAL_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.Main -- Take out {}s, and put name of frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(OQAL_fake_script)()
